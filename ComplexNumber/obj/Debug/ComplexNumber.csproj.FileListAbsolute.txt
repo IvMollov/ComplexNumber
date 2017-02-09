@@ -4,3 +4,9 @@ D:\Projects\ComplexNumber\ComplexNumber\bin\Debug\ComplexNumber.pdb
 D:\Projects\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.csprojResolveAssemblyReference.cache
 D:\Projects\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.exe
 D:\Projects\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.pdb
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\bin\Debug\ComplexNumber.exe.config
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\obj\Debug\ComplexNumber.exe
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\obj\Debug\ComplexNumber.pdb
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\bin\Debug\ComplexNumber.exe
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\bin\Debug\ComplexNumber.pdb
+D:\Projects\ComplexNumber\ComplexNumbers\ComplexNumber\obj\Debug\ComplexNumber.csprojResolveAssemblyReference.cache

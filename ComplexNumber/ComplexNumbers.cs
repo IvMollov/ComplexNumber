@@ -15,7 +15,7 @@ namespace ComplexNumber
         {
 
         }
-        public ComplexNumbers(int realNumber, int imaginaryNumber)
+        public ComplexNumbers(double realNumber, double imaginaryNumber)
         {
             this.realNumber = realNumber;
             this.imaginaryNumber = imaginaryNumber;
@@ -30,6 +30,25 @@ namespace ComplexNumber
         {
             get { return this.imaginaryNumber; }
             set { this.imaginaryNumber = value; }
+        }
+
+        public double this[int index]
+        {
+            get
+            {
+                if (index == 0)
+                {
+                    return this.realNumber;
+                }
+                else if (index == 1)
+                {
+                    return this.imaginaryNumber;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException("Index out of range!");
+                }
+            }
         }
 
         public static ComplexNumbers operator +(ComplexNumbers number1, ComplexNumbers number2)
@@ -64,6 +83,16 @@ namespace ComplexNumber
             return complNmb;
         }
 
+        public static implicit operator ComplexNumbers(double number)
+        {
+            return new ComplexNumbers(number, number);
+        }
+
+        public static explicit operator double(ComplexNumbers number)
+        {
+            double value;
+            return value = number.realNumber + number.imaginaryNumber;
+        }
         public override string ToString()
         {
             return $"{realNumber} + {imaginaryNumber}i";

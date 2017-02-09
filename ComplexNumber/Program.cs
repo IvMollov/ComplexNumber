@@ -9,7 +9,11 @@ namespace ComplexNumber
     class Program
     {
         static void Main(string[] args)
-        {          
+        {
+            double ab = 4.3;
+            ComplexNumbers abc = new ComplexNumbers(3.3, 22.3);
+            double asss = (double)abc;
+            Console.WriteLine(asss);
             while (true)
             {
                 Console.WriteLine("Press 1 to add two complex numbers.\n");
@@ -19,7 +23,7 @@ namespace ComplexNumber
                 Console.WriteLine("Press any other number to exit.\n");
                 Console.Write("Enter your choice: ");
                 int choice = int.Parse(Console.ReadLine());
-                if(choice >= 5 || choice < 1)
+                if (choice >= 5 || choice < 1)
                 {
                     Console.WriteLine("\nYour choice is to Exit!");
                     Console.ReadLine();
@@ -27,14 +31,14 @@ namespace ComplexNumber
                 }
                 Console.WriteLine("Enter a and b where a + bi is the first complex number.");
                 Console.Write("a = ");
-                int a = int.Parse(Console.ReadLine());
+                double a = double.Parse(Console.ReadLine());
                 Console.Write("b = ");
-                int b = int.Parse(Console.ReadLine());
+                double b = double.Parse(Console.ReadLine());
                 Console.WriteLine("Enter c and d where c + di is the second complex number.");
                 Console.Write("c = ");
-                int c = int.Parse(Console.ReadLine());
+                double c = double.Parse(Console.ReadLine());
                 Console.Write("d = ");
-                int d = int.Parse(Console.ReadLine());
+                double d = double.Parse(Console.ReadLine());
 
                 switch (choice)
                 {
@@ -45,7 +49,15 @@ namespace ComplexNumber
                         Console.WriteLine("Second complex number: {0}", number2);
                         ComplexNumbers result = new ComplexNumbers();
                         result = number1 + number2;
-                        Console.WriteLine("Sum of two complex numbers = {0}\n----------------------------", result);
+                        try
+                        {
+                            Console.WriteLine("Sum of two complex numbers = {0}" +
+                                                        "\nReal part: {1}, complex part: {2}\n----------------------------", result, result[0], result[2]);
+                        }
+                        catch(IndexOutOfRangeException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
                     case 2:
                         ComplexNumbers number3 = new ComplexNumbers(a, b);
@@ -54,7 +66,15 @@ namespace ComplexNumber
                         Console.WriteLine("Second complex number: {0}", number4);
                         ComplexNumbers result1 = new ComplexNumbers();
                         result1 = number3 * number4;
-                        Console.WriteLine("Multiplication of two complex numbers = {0}\n----------------------------", result1);
+                        try
+                        {
+                            Console.WriteLine("Multiplication of two complex numbers = {0}" +
+                           "\nReal part: {1}, complex part: {2}\n----------------------------", result1, result1[0], result1[1]);
+                        }
+                        catch (IndexOutOfRangeException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
                     case 3:
                         ComplexNumbers number5 = new ComplexNumbers(a, b);
@@ -63,7 +83,15 @@ namespace ComplexNumber
                         Console.WriteLine("Second complex number: {0}", number6);
                         ComplexNumbers result2 = new ComplexNumbers();
                         result2 = number5 - number6;
-                        Console.WriteLine("Difference of two complex numbers = {0}\n----------------------------", result2);
+                        try
+                        {
+                            Console.WriteLine("Difference of two complex numbers = {0}" +
+                           "\nReal part: {1}, complex part: {2}\n----------------------------", result2, result2[0], result2[1]);
+                        }
+                        catch (IndexOutOfRangeException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
                     case 4:
                         ComplexNumbers number7 = new ComplexNumbers(6, 3);
@@ -78,6 +106,6 @@ namespace ComplexNumber
                 }
             }
         }
-        }
     }
+}
 
