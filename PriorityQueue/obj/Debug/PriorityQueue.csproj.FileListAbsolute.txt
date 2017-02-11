@@ -1,0 +1,6 @@
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\bin\Debug\PriorityQueue.exe.config
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\bin\Debug\PriorityQueue.exe
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\bin\Debug\PriorityQueue.pdb
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\obj\Debug\PriorityQueue.csprojResolveAssemblyReference.cache
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\obj\Debug\PriorityQueue.exe
+D:\Projects\ComplexNumber\ComplexNumbers\PriorityQueue\obj\Debug\PriorityQueue.pdb

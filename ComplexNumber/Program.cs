@@ -10,10 +10,6 @@ namespace ComplexNumber
     {
         static void Main(string[] args)
         {
-            double ab = 4.3;
-            ComplexNumbers abc = new ComplexNumbers(3.3, 22.3);
-            double asss = (double)abc;
-            Console.WriteLine(asss);
             while (true)
             {
                 Console.WriteLine("Press 1 to add two complex numbers.\n");
@@ -23,12 +19,14 @@ namespace ComplexNumber
                 Console.WriteLine("Press any other number to exit.\n");
                 Console.Write("Enter your choice: ");
                 int choice = int.Parse(Console.ReadLine());
+
                 if (choice >= 5 || choice < 1)
                 {
                     Console.WriteLine("\nYour choice is to Exit!");
                     Console.ReadLine();
                     return;
                 }
+
                 Console.WriteLine("Enter a and b where a + bi is the first complex number.");
                 Console.Write("a = ");
                 double a = double.Parse(Console.ReadLine());
