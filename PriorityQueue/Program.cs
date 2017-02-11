@@ -34,6 +34,7 @@ namespace PriorityQueue
                 Console.WriteLine("Let's delete another node!");
                 int exc = pr.Dequeue();
                 Console.WriteLine("We have deleted {0}", exc);
+                Print(pr);
             }
             catch(EmptyPriorityQueueException ex)
             {

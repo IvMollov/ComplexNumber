@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace PriorityQueue
 {
-    class PriorityQueue<T> : IEnumerable<T> where T : IComparable<T>
+    public class PriorityQueue<T> : IEnumerable<T> where T : IComparable<T>
     {
         private List<T> list;
 
@@ -112,7 +112,7 @@ namespace PriorityQueue
                 return firstItem;
             }
         }
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             foreach (T item in list)
             {
